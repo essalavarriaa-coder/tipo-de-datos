@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/24556794/README.md)
 # Conversor de Temperaturas Celsius a Fahrenheit en Python
 
 Este programa en Python convierte temperaturas de grados Celsius a grados Fahrenheit.
@@ -22,5 +21,4 @@ Este script permite a los usuarios ingresar una temperatura en grados Celsius y 
 
 1.  Clona este repositorio a tu máquina local:
 
-    ```bash
-    git clone [https://github.com/essalavarriaa-coder/TIPO-DE-DATOS/blob/main/conversion-temperaturas-python.txt]
+https://github.com/essalavarriaa-coder/TIPO-DE-DATOS/blob/main/conversion-temperaturas-python.txt

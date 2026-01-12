@@ -1,0 +1,48 @@
+# Programa para convertir temperaturas de grados Celsius a Fahrenheit.
+# El usuario ingresa una temperatura en Celsius y el programa muestra su equivalente en Fahrenheit.
+
+def convertir_celsius_a_fahrenheit(celsius_temp: float) -> float:
+    """
+    Convierte una temperatura de Celsius a Fahrenheit.
+    
+    Parámetros:
+        celsius_temp (float): Temperatura en grados Celsius.
+        
+    Retorna:
+        float: Temperatura convertida a grados Fahrenheit.
+    """
+    fahrenheit_temp = (celsius_temp * 9 / 5) + 32
+    return fahrenheit_temp
+
+def es_numero_valido(valor: str) -> bool:
+    """
+    Verifica si el valor ingresado puede convertirse a float.
+    
+    Parámetros:
+        valor (str): Cadena de texto ingresada por el usuario.
+        
+    Retorna:
+        bool: True si es convertible a float, False en caso contrario.
+    """
+    try:
+        float(valor)
+        return True
+    except ValueError:
+        return False
+
+def main():
+    """
+    Función principal que ejecuta el programa.
+    Solicita al usuario una temperatura en Celsius, valida la entrada,
+    y muestra la temperatura convertida en Fahrenheit.
+    """
+    entrada_usuario = input("Ingrese la temperatura en grados Celsius: ")
+    if es_numero_valido(entrada_usuario):
+        temperatura_celsius = float(entrada_usuario)
+        temperatura_fahrenheit = convertir_celsius_a_fahrenheit(temperatura_celsius)
+        print(f"{temperatura_celsius} °C equivalen a {temperatura_fahrenheit:.2f} °F.")
+    else:
+        print("Error: Por favor ingrese un número válido para la temperatura.")
+
+if __name__ == "__main__":
+    main()
